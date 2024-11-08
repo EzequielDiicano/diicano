@@ -1,0 +1,121 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b3b3b3;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.product-section, .summary {
+    background-image: url('path/to/rain-background.jpg');
+    background-size: cover;
+    padding: 20px;
+    border: 1px solid #00FF00;
+}
+
+.product-section {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.product-photo {
+    grid-column: 1 / 2;
+    border: 1px solid black;
+}
+
+.product-info {
+    grid-column: 2 / 4;
+    border: 1px solid green;
+}
+
+.product-quantity, .product-price {
+    grid-column: 3 / 4;
+    border: 1px solid green;
+}
+
+/* Aside (Summary) */
+.summary {
+    flex: 1;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid green;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #b3b3b3;
+    text-align: center;
+    padding: 10px;
+}
