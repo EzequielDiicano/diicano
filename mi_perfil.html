@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - DiCano</title>
+    <link rel="stylesheet" href="css/styles_mi_perfil.css"> <!-- Ruta del CSS en la carpeta css -->
+</head>
+<body>
+    <div class="rain"></div> <!-- Fondo de lluvia -->
+
+    <!-- Header con menú y barra de búsqueda -->
+    <header>
+        <h1>DiCano</h1>
+        <div class="search-menu">
+            <input type="text" placeholder="Buscar..." class="search-bar">
+            <div class="user-icon" onclick="toggleMenu()">👤</div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="indexfuturo.html">Inicio</a>
+                <a href="mi_carrito.html">Mi Carrito</a>
+                <a href="#cerrar-sesion">Cerrar Sesión</a>
+                <a href="mailto:contacto@dicano.com">Contáctanos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <div class="profile-picture">
+                <img src="https://via.placeholder.com/100" alt="Foto de perfil">
+            </div>
+            <div class="profile-info">
+                <label for="fileInput" class="change-photo-button"><b>Cambiar foto</b></label>
+                <input type="file" id="fileInput" style="display: none;">
+                <p><b>Información personal:</b><br>
+                    Hola soy Ezequiel, esta es mi informacion personal uwu
+                </p><br>
+                <p><b>Dirección:</b><br>
+                    Franquito 2445
+                </p><br>
+                <p><b>Nombre y Apellido:</b><br>
+                    Ezequiel Cano
+                </p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="buttons-row">
+                <div id="Compras" class="button-container">
+                    <h3>Total de las compras</h3>
+                    <button>Mis compras</button>
+                </div>
+                <div class="button-container">
+                    <h3>Publicaciones guardadas</h3>
+                    <button>Favoritos</button>
+                </div>
+                <div class="button-container">
+                    <h3>Descuentos por compra</h3>
+                    <button>Beneficios</button>
+                </div>
+            </div>
+
+            <div class="purchase-summary">
+                <div class="purchase-item">
+                    <p>PRODUCTO 1</p>
+                    <p class="price">$</p>
+                </div>
+                <div class="purchase-item">
+                    <p>PRODUCTO 2</p>
+                    <p class="price">$</p>
+                </div>
+                <div class="purchase-item">
+                    <p>PRODUCTO 3</p>
+                    <p class="price">$</p>
+                </div>
+                <div class="purchase-item">
+                    <p>PRODUCTO 4</p>
+                    <p class="price">$</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer con información de contacto -->
+    <footer id="contact-section">
+        <p>Contacto: contacto@dicano.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/diicano" target="_blank"><b>@diicano</b></a></p>
+        <p>Founder, Co-founder: Ezequiel Cano y Agustin Leyes</p>
+    </footer>
+
+    <script src="javascript/interaccion_index.js"></script> <!-- Ruta del JavaScript en la carpeta javascript -->
+</body>
+</html>

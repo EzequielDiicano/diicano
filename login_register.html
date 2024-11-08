@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="css/styles_login_register.css">
+</head>
+<body>
+    <!-- Fondo interactivo -->
+    <div class="background"></div>
+
+    <!-- Contenedor principal con el título y el formulario -->
+    <div class="main-container">
+        <div class="title">DïCano</div>
+        
+        <!-- Contenedor del formulario -->
+        <div class="container" id="form-container">
+            <h2 id="form-title">Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            
+            <form id="register-form" style="display: none;">
+                <input type="text" placeholder="Nombre de usuario" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+
+            <div class="switch" onclick="toggleForms()">¿No tienes una cuenta? Regístrate</div>
+        </div>
+    </div>
+
+    <script src="javascript/interacciones_login_register.js"></script>
+</body>
+</html>

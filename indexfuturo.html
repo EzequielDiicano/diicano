@@ -18,38 +18,43 @@
             <input type="text" placeholder="Buscar...">
             <div class="user-icon" onclick="toggleMenu()">👤</div>
             <div class="dropdown-menu" id="dropdownMenu">
-                <a href="#perfil">Perfil</a>
-                <a href="#carrito">Mi Carrito</a>
-                <a href="#cerrar-sesion">Cerrar Sesión</a>
+                <a href="mi_perfil.html">Perfil</a>
+                <a href="mi_carrito.html">Mi Carrito</a>
+                <a href="cerrar_sesion">Cerrar Sesión</a>
                 <a href="mailto:contacto@dicano.com">Contáctanos</a>
             </div>
         </div>
     </header>
 
-    <!-- Sección principal con artículos -->
     <section>
         <article class="article">
-            <img src="https://via.placeholder.com/150" alt="Remera">
-            <h2>Remera 1</h2>
+            <img src="imagenes/future_black.png" alt="Remera">
+            <h2>Future Black</h2>
             <p>Descripción breve de la remera.</p>
+            <button class="favorite-button">Agregar a favorito</button>
+            <button class="cart-button">Agregar al carrito</button>
         </article>
         <article class="article">
-            <img src="https://via.placeholder.com/150" alt="Remera">
-            <h2>Remera 2</h2>
+            <img src="imagenes/future_white.png" alt="Remera">
+            <h2>Future White</h2>
             <p>Descripción breve de la remera.</p>
+            <button class="favorite-button">Agregar a favorito</button>
+            <button class="cart-button">Agregar al carrito</button>
         </article>
         <article class="article">
-            <img src="https://via.placeholder.com/150" alt="Remera">
-            <h2>Remera 3</h2>
-            <p>Descripción breve de la remera.</p>
+            <img src="imagenes/simple_brown.png" alt="Remera">
+            <h2>Simple Brown</h2>
+            <p>Descripción breve de la remera.<br></p>
+            <button class="favorite-button">Agregar a favorito</button>
+            <button class="cart-button">Agregar al carrito</button>
         </article>
     </section>
 
     <!-- Footer con información de contacto -->
     <footer>
         <p>Contacto: contacto@dicano.com</p>
-        <p>Instagram: <a href="https://www.instagram.com/dicano" target="_blank">@dicano</a></p>
-        <p>Dueños: Juan Pérez y Ana García</p>
+        <p>Instagram: <a href="https://www.instagram.com/diicano" target="_blank"><b>@diicano</b></a></p>
+        <p>Founder, Co-founder: Ezequiel Cano y Agustin Leyes</p>
     </footer>
 
     <script src="javascript/interaccion_index.js"></script>
