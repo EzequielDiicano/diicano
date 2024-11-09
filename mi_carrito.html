@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiCano - Mi Carrito</title>
+    <title>DïCano - Mi Carrito</title>
     <link rel="stylesheet" href="css/stryle_mi_carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Fondo interactivo de lluvia -->
+    <div class="background">
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+    </div>
+
     <!-- Navbar -->
     <nav>
-        <div class="logo">DiCano</div>
-        <input type="text" class="search-bar" placeholder="Buscar...">
-        <div class="menu">
-            <button class="menu-button">☰</button>
-            <div class="dropdown">
-                <a href="index.html">Inicio</a>
-                <a href="#">Mi perfil</a>
-                <a href="#">Mi carrito</a>
-                <a href="#">Cerrar sesión</a>
-                <a href="#">Contáctanos</a>
+        <div class="logo">DïCano</div>
+        <div class="nav-right">
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <div class="menu">
+                <button class="menu-button">☰</button>
+                <div class="dropdown">
+                    <a href="index.html">Inicio</a>
+                    <a href="mi_perfil.html">Mi Perfil</a>
+                    <a href="#">Cerrar sesión</a>
+                    <a href="#">Contáctanos</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -27,9 +43,9 @@
     <div class="container">
         <section class="product-section">
             <div class="product-photo">Foto del producto</div>
-            <div class="product-info"><b>Información del producto:</b><br><p>dgasdgsd</p></div>
+            <div class="product-info"><b>Información del producto:</b><br><p>Descripción del producto.</p></div>
             <div class="product-quantity">Cantidad:</div>
-            <div class="product-price">$250000</div>
+            <div class="product-price">$,/div>
         </section>
 
         <aside class="summary">
@@ -42,7 +58,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>Información de contacto</p>
+        <p><b>Información de la empresa:</b> DïCano Ltd.</p>
+        <p><b>Instagram:</b> @dicano</p>
+        <p><b>Fundador y Co-fundador:</b> Ezequiel Cano y Agustin Leyes</p>
     </footer>
 
     <script src="javascript/interacciones_mi_carrito.js"></script>
