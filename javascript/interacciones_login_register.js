@@ -25,3 +25,19 @@ function toggleForms() {
         switchText.textContent = "¿Ya tienes una cuenta? Inicia sesión";
     }
 }
+
+// Validación de credenciales y redirección
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío del formulario por defecto
+    
+    // Obtener valores del formulario
+    const emailInput = event.target.querySelector('input[type="email"]').value;
+    const passwordInput = event.target.querySelector('input[type="password"]').value;
+    
+    // Validar credenciales
+    if (emailInput === "pruebajaja123@gmail.com" && passwordInput === "Prueba123") {
+        window.location.href = "index.html"; // Redirigir a index.html
+    } else {
+        alert("Correo o contraseña incorrectos");
+    }
+});
